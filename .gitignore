@@ -1,4 +1,6 @@
 # Logs
+secrer.md
+
 logs
 *.log
 npm-debug.log*
