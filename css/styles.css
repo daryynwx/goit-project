@@ -10,3 +10,19 @@ a {
 button {
 cursor: pointer;
 }
+
+.page-logo {
+    font-family: "Raleway", sans-serif;
+
+    font-style: italic;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 117%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #2e2f42;
+}
+
+.text-italic {
+    font-style:italic;
+}
