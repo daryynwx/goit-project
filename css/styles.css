@@ -17,12 +17,13 @@ cursor: pointer;
     font-style: italic;
     font-weight: 700;
     font-size: 18px;
-    line-height: 117%;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #2e2f42;
 }
 
 .text-italic {
-    font-style:italic;
+    font-style: italic;
+    color: #4d5ae5;
 }
