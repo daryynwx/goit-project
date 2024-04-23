@@ -88,6 +88,10 @@ color: #434455;
     color: #404bbf;
 }
 
+.adress-link:focus {
+    color: #404bbf;
+}
+
 .main-text {
     font-family: "Roboto", sans-serif;
 font-weight: 700;
