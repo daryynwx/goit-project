@@ -29,7 +29,7 @@ body{
     font-style: italic;
     font-weight: 700;
     font-size: 18px;
-    line-height: 1.5;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
@@ -54,6 +54,7 @@ color: #2e2f42;
 font-weight: 500;
 font-size: 16px;
 letter-spacing: 0.02em;
+line-height: 1.5;
 color: #2e2f42;
 }
 
@@ -92,6 +93,7 @@ font-weight: 700;
 font-size: 56px;
 letter-spacing: 0.02em;
 text-align: center;
+line-height: 1.07;
 color: #fff;
 }
 
@@ -100,13 +102,16 @@ color: #fff;
     font-weight: 500;
     font-size: 16px;
     letter-spacing: 0.04em;
+    line-height: 1.5;
     color: #fff;
     background-color: #4d5ae5;
 }
 
  .button-service:hover{
     background-color: #404bbf;
-
+ }
+ .button-service:focus{
+    background-color: #404BBF;
  }
 
 .first-section {
@@ -137,13 +142,24 @@ text-transform: capitalize;
     background-color: #FFFFFF
 }
 
+.page-people-information{
+    background-color: #F4F4FD;
+}
+
 .comands-people-information {
     font-family: "Roboto", sans-serif;
 font-weight: 700;
 font-size: 36px;
 letter-spacing: 0.02em;
 text-align: center;
+line-height: 1.11;
 color: #2e2f42;
+text-transform: capitalize;
+}
+
+.comands-list{
+background-color: #FFFFFF;
+
 }
 
 .names-comand{
@@ -152,7 +168,8 @@ color: #2e2f42;
     font-size: 20px;
     letter-spacing: 0.02em;
     text-align: center;
-    color: #2e2f42;
+    line-height: 1.2;
+    color:#2e2f42;
 }
 
 .information-our-team{
