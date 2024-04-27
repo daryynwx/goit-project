@@ -1,5 +1,20 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+margin-top: 0;
+margin-bottom: 0;
+
+}
+
 ul,
 ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
     list-style-type: none;
 }
 
@@ -12,17 +27,41 @@ cursor: pointer;
 
 }
 
+img{
+    display: block;
+}
+
 body{
 
     color: #434455;
     font-family: "Roboto", sans-serif;
     background-color: #fff;
 }
+
+.container {
+    max-width: 1128px;
+    padding-left: 156px;
+    padding-right: 156px;
+    margin-left: auto;
+    margin-right: auto;
+}
     .page-address {
         font-family: "Roboto", sans-serif;
     color: #434455;
     font-style: normal;
     }
+    .page-navigation{
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .menu {
+        display: flex;
+column-gap: 40px;
+    }
+
+
 .page-logo {
     font-family: "Raleway", sans-serif;
 
