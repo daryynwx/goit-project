@@ -19,7 +19,7 @@
   </head>
   <body>
     <header class="page-header">
-     <div class="container">
+     <div class="container page-header-container">
       <nav class="page-navigation">
         <a class="page-logo" href="./index.html">
           Web
@@ -53,8 +53,12 @@
     <!--=====HERO=====-->
     <main>
       <section class="first-section">
+        <div class="container hero-container">
         <h1 class="main-text">Effective Solutions for Your Business</h1>
-        <button class="button-service" type="button">Order Service</button>
+        <div class="hero-content-wrapper">
+           <button class="button-service" type="button">Order Service</button>
+        </div>
+        </div>
       </section>
       <section id="benefits">
         <!--===== BENEFITS =====-->
@@ -91,9 +95,10 @@
         </ul>
       </section>
       <!--====== COMANDS PEOPLE INFORMATION =====-->
-      <section class="page-people-information">
+      <section class="page-people-information section-paddings">
+        <div class="container">
         <h2 class="comands-people-information">Our Team</h2>
-        <ul>
+        <ul class="list-comands">
           <li class="comands-list">   
             <img
               src="./images/img/mark-guerrero.jpg"
@@ -139,6 +144,7 @@
           
           </li>
         </ul>
+        </div>
       </section>
       <section>
         <h2 class="portfolio">Our Portfolio</h2>
