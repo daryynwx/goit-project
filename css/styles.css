@@ -46,6 +46,12 @@ body{
     margin-right: auto;
 }
 
+.page-header {
+    border-bottom: 1px solid #e7e9fc;
+    width: 1158px;
+    padding: 0 15px; 
+}
+
 
 .page-header-container {
 display: flex;
@@ -65,7 +71,8 @@ justify-content: space-between;
 
     .menu {
         display: flex;
-column-gap: 40px;
+        column-gap: 40px;
+        gap: 40px;
     }
 
 
@@ -80,6 +87,7 @@ column-gap: 40px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    margin-right: 76px;
 }
 
 .page-logo-second {
@@ -125,6 +133,7 @@ color: #2e2f42;
     color: #2e2f42;
 }
 
+
 .adress-link {
     font-family: "Roboto", sans-serif;
 font-weight: 400;
@@ -132,6 +141,8 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #434455;
+display: flex;
+
 }
 
 .adress-link:hover {
@@ -180,6 +191,7 @@ max-width: 496px;
     max-width: 1440px;
     margin-right: auto;
     margin-left: auto;
+    padding: 188px 0;
 }
 
 .hero-container{
