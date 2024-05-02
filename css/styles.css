@@ -44,12 +44,12 @@ body{
     padding-right: 156px;
     margin-left: auto;
     margin-right: auto;
+    width: 1158px;
+    padding: 0 15px;
 }
 
 .page-header {
     border-bottom: 1px solid #e7e9fc;
-    width: 1158px;
-    padding: 0 15px; 
 }
 
 
@@ -88,6 +88,7 @@ justify-content: space-between;
     text-transform: uppercase;
     color: #4d5ae5;
     margin-right: 76px;
+    padding: 24px 0;
 }
 
 .page-logo-second {
@@ -133,6 +134,10 @@ color: #2e2f42;
     color: #2e2f42;
 }
 
+.address-list{
+    display: flex;
+    gap: 40px;
+}
 
 .adress-link {
     font-family: "Roboto", sans-serif;
