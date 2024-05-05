@@ -45,7 +45,7 @@ body{
     margin-left: auto;
     margin-right: auto;
     width: 1158px;
-    padding: 0 15px;
+    padding: 0, 15px;
 }
 
 .page-header {
@@ -137,6 +137,8 @@ color: #2e2f42;
 .address-list{
     display: flex;
     gap: 40px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .adress-link {
