@@ -212,12 +212,9 @@ padding-top: 260px;
 padding-bottom: 472px;
 padding-left: 472px;
 padding-right: 472px;
+
 }
 
-.hero-content-wrapper{
-    display: flex;
-    align-items: center;
-}
 
 .section-second{
     padding: 120px 0;
@@ -243,6 +240,7 @@ letter-spacing: 0.02em;
 color: #434455;
 text-transform: capitalize;
 }
+
 
 .benefits-list{
     background-color: #FFFFFF;
