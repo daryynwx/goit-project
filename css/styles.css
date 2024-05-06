@@ -74,7 +74,6 @@ justify-content: space-between;
         display: flex;
         column-gap: 40px;
         gap: 40px;
-        padding: 24px 0 ;
     }
 
 
@@ -116,6 +115,7 @@ font-size: 16px;
 letter-spacing: 0.02em;
 line-height: 1.5;
 color: #2e2f42;
+padding: 24px 0;
 }
 
 .menu-link:hover {
@@ -171,21 +171,7 @@ line-height: 1.07;
 color: #fff;
 max-width: 496px;
 }
-.button-service {
-    min-width: 169px;
-    height: 56;
-    padding: 21px 33px;
-  
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    letter-spacing: 0.04em;
-    line-height: 1.5;    
-    color: #fff;
-    border: none;
-    background-color: #4d5ae5; 
-    border-radius: 4px;
-}
+
 
  .button-service:hover{
     background-color: #404bbf;
@@ -202,6 +188,25 @@ max-width: 496px;
     padding: 188px 0;
 }
 
+.button-service {
+    min-width: 169px;
+    height: 56;
+    padding: 21px 33px;
+    display: block;
+  
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    line-height: 1.5;    
+    color: #fff;
+    border: none;
+    background-color: #4d5ae5; 
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
 .hero-container{
 padding-top: 260px;
 padding-bottom: 472px;
@@ -214,6 +219,9 @@ padding-right: 472px;
     align-items: center;
 }
 
+.section-second{
+    padding: 120px 0;
+}
 
 .benefits-section{
     font-family: "Roboto", sans-serif;
@@ -223,6 +231,7 @@ line-height: 1.2;
 letter-spacing: 0.02em;
 color: #2e2f42;
 background-color: #F4F4FD;
+margin-bottom: 8px;
 }
 
 .text-benefits-section{
@@ -236,7 +245,10 @@ text-transform: capitalize;
 }
 
 .benefits-list{
-    background-color: #FFFFFF
+    background-color: #FFFFFF;
+    display: flex;
+    gap: 24px; 
+
 }
 
 .page-people-information{
@@ -252,18 +264,34 @@ text-align: center;
 line-height: 1.11;
 color: #2e2f42;
 text-transform: capitalize;
-margin-bottom: 80px;
+margin-bottom: 72px;
 }
+
+.benefits-item{
+    width: calc((100% – 72px)/4); 
+
+}
+
 
 .list-comands{
     display: flex;
     column-gap: 24px;
+    gap: 24px;
 }
 
 .comands-list{
     width: 360px;
+    border-radius: 0px 0px 4px 4px;
 }
 
+.name-and-work{
+    padding: 32px 0;
+}
+
+.names-comand{
+    text-align: center; 
+    margin-bottom: 8px;
+}
 
 .section-paddings{
     padding-top: 120px;
@@ -293,6 +321,7 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 text-align: center;
 color: #434455;
+
 }
 
 .portfolio {
