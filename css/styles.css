@@ -257,6 +257,11 @@ background-color: #F4F4FD;
 margin-bottom: 8px;
 }
 
+.svg-container{
+     width:64px;
+     height:64px;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
