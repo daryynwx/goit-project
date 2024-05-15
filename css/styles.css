@@ -397,10 +397,13 @@ color: #434455;
     justify-content: center;
 }
 
-.link-pages-people:hover,:focus{
+.link-pages-people:hover{
     background-color: #404bbf;
 }
 
+.link-pages-people:focus{
+    background-color: #404bbf; 
+}
 
 .svg-pages-people{
     fill:#f4f4fd;
