@@ -452,17 +452,16 @@ margin-bottom: 72px;
 .portfolio-overlay-container{
     position: relative;
     overflow: hidden;
+    
 }
-.portfolio-overlay-container:hover .portfolio-overlay{
-   transform: translateY(0);
-}
+
 
 .paragraf-overlay{
     transform: translateY(100%);
 }
 
-.paragraf-overlay:hover{
-    transform: translateY(0%);
+li:hover p{
+transform: translateY(0%);
 }
 
 .portfolio-information{
