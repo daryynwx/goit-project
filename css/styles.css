@@ -606,3 +606,108 @@ letter-spacing: 0.02em;
 color: #f4f4fd;
 max-width: 264px 
 }
+
+/*========== BACKDROP STYLES ========*/
+.backdrop{
+    position: fixed;
+    left:0;
+    top:0;
+    z-index: 999999999;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opaciti 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-open{
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal{
+    padding-top: 72px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 408px;
+    min-height: 584px;
+    background-color: #fafafa;
+    border-radius: 4px;
+
+}
+
+.modal-close-btn{
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    stroke: #111;
+    line-height: 0;
+    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus{
+stroke: #f4f4fd;
+}
+
+.review-form-description{
+   max-width: 360px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+    margin-bottom: 34px;
+}
+
+.review-form-field-label{
+  
+display: block;
+font-size: 12px;
+line-height: 1.17;
+letter-spacing: 0.04em;
+color: #8e8f99;
+margin-bottom: 7px;
+
+}
+
+.review-form-input{
+    width: 100%;
+    height: 58px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    padding-left: 38px;
+    background-color: transparent;
+}
+
+.review-form-field-wrapper{
+    margin-bottom: 26px;
+}
+
+.review-form-field-icon{
+    stroke: #2e2f42;
+}
+
+.review-form-input-wrapper{
+    position: relative;
+}
+
+.review-form-field-icon{
+    position: absolute;
+    top:50%;
+    left: 16px;
+    transform: translateY(-50%);
+
+}
