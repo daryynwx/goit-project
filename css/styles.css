@@ -839,8 +839,12 @@ fill: #ffffff;
     visibility: hidden;
 }
 
+.review-form-chekbox:focus +review-form-svg-checkbox{
+    fill: #4D5AE5; 
+}
+
 .review-form-checkbox-wrapper{
-    margin-bottom: 24px; 
+    margin-bottom: 16px; 
 }
 
 .review-form-checkbox-label{
