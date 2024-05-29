@@ -831,7 +831,7 @@ border: none;
     visibility: hidden;
 }
 
-.review-form-chekbox:focus > .review-form-svg-checkbox{
+.input:focus +svg{
     fill: #4D5AE5; 
 }
 
