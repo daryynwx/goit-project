@@ -884,7 +884,7 @@ border: none;
     justify-content: center; 
     fill: transparent; 
 }
-.checkbox:checked + .review-form-checkbox-label > custom-checkbox {
+.checkbox:checked + .review-form-checkbox-label > .custom-checkbox {
     background-color: #404bbf;
     border: none;
     fill: #F4F4FD;
