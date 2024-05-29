@@ -791,7 +791,6 @@ border: none;
 
 .review-form-input-wrapper{
     position: relative;
-    margin-bottom: 8px;
 
 }
 
@@ -824,8 +823,12 @@ border: none;
     border-color: #4D5AE5; 
 }
 
-.review-form-input-wrapper{
-    margin-bottom: 24px; 
+.review-form-input-wrapper-name{
+    margin-bottom: 8px; 
+}
+
+.review-form-input-wrapper-email{
+    margin-bottom: 16px;
 }
 
 .review-form-chekbox{
@@ -837,7 +840,7 @@ border: none;
 }
 
 .review-form-checkbox-wrapper{
-    margin-bottom: 16px 
+    margin-bottom: 24px;
 }
 
 .review-form-checkbox-label{
