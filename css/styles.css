@@ -823,11 +823,11 @@ border: none;
     border-color: #4D5AE5; 
 }
 
-.review-form-input-wrapper-name{
+.review-form-field-wrapper-name{
     margin-bottom: 8px; 
 }
 
-.review-form-input-wrapper-email{
+.review-form-field-wrapper-email{
     margin-bottom: 16px;
 }
 
@@ -839,7 +839,7 @@ border: none;
     fill: #4D5AE5; 
 }
 
-.review-form-checkbox-wrapper{
+.review-form-field-wrapper-checkbox{
     margin-bottom: 24px;
 }
 
