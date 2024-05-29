@@ -854,6 +854,7 @@ border: none;
 
 .privacy-policy-link{
     color: #4d5ae5;
+    text-decoration: underline;
 }
 
 .review-form-submit{
@@ -871,7 +872,7 @@ border: none;
 
 }
 
-.review-form-span {
+.custom-checkbox {
     width: 16px; 
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -883,6 +884,8 @@ border: none;
     justify-content: center; 
     fill: transparent; 
 }
-.checkbox{
+.checkbox:checked + .review-form-checkbox-label > custom-checkbox {
     background-color: #404bbf;
+    border: none;
+    fill: #F4F4FD;
 }
