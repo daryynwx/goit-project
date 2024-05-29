@@ -884,7 +884,7 @@ border: none;
 
 }
 
-.review-form-chekbox:checked + review-form-checkbox-span{
+.review-form-span__checkbox{
     background-color: #404bbf;
     border: none;
     fill:#F4F4FD;
