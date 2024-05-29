@@ -823,12 +823,8 @@ border: none;
     border-color: #4D5AE5; 
 }
 
-.review-form-field-wrapper-name{
+.review-form-field-wrapper{
     margin-bottom: 8px; 
-}
-
-.review-form-field-wrapper-email{
-    margin-bottom: 16px;
 }
 
 .review-form-chekbox{
@@ -840,8 +836,14 @@ border: none;
 }
 
 .review-form-field-wrapper-checkbox{
+    margin-bottom: 16px;
+}
+
+.review-form-checkbox-wrapper{
     margin-bottom: 24px;
 }
+
+
 
 .review-form-checkbox-label{
     font-size: 12px;
