@@ -781,10 +781,7 @@ border: none;
     fill: #4D5AE5;
 }
 
-.review-form-field-wrapper{
-    margin-bottom: 8px;
 
-}
 
 .review-form-field-icon{
     stroke: #2e2f42;
@@ -794,6 +791,8 @@ border: none;
 
 .review-form-input-wrapper{
     position: relative;
+    margin-bottom: 8px;
+
 }
 
 .review-form-field-icon{
@@ -838,7 +837,7 @@ border: none;
 }
 
 .review-form-checkbox-wrapper{
-    margin-bottom: 24px;
+    margin-bottom: 16px 
 }
 
 .review-form-checkbox-label{
