@@ -898,3 +898,13 @@ input:focus + svg {
     border: none;
     fill: #F4F4FD;
 }
+
+@media screen and (min-width: 320px) {
+    
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1158px) {
+}
