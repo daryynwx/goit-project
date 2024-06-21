@@ -294,14 +294,8 @@ margin-bottom: 8px;
   }
 
   .container-benefits-icons{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 112px;
-    background-color: #f4f4fd; 
-    border-radius: 4px; 
-    border: 1px solid #8e8f99;
-    margin-bottom: 8px; 
+    display: block;
+    
 
   }
 
@@ -346,20 +340,28 @@ margin-bottom: 72px;
     flex: 1 1 calc(25% - 24px); 
 } 
  
-@media (max-width: 768px) { 
+@media screen and (max-width: 768px) { 
     .benefits-item { 
         flex: 1 1 calc(50% - 24px); /* Для 2 блоков в ряд на планшете */ 
     } 
 } 
  
-@media (max-width: 320px) { 
+@media screen and (max-width: 1158px) { 
     .benefits-item { 
         flex: 1 1 100%; /* Для 1 блока в ряд на мобильных устройствах */ 
     } 
 
     .container-benefits-icons{
-        display: none;
-    }
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 112px;
+        background-color: #f4f4fd; 
+        border-radius: 4px; 
+        border: 1px solid #8e8f99;
+        margin-bottom: 8px; 
+    
+      }
 }
 
 
@@ -386,13 +388,23 @@ margin-bottom: 72px;
     .comands-list { 
         flex: 1 1 calc(50% - 24px); /* Для 2 блоков в ряд на планшете */ 
     } 
-} 
+
+    .addaptiv-version{
+        width: 584px;
+    }
+}
  
-@media (max-width: 480px) { 
+ 
+@media (max-width: 480px) {
     .comands-list{ 
         flex: 1 1 100%; /* Для 1 блока в ряд на мобильных устройствах */ 
     } 
+    .addaptiv-version{
+        width: 584px;
+    }
 }
+    
+
 
 
 .name-and-work{
@@ -544,6 +556,7 @@ margin-bottom: 8px;
 
 
 
+
 .portfolio-list{
     display: flex;
     flex-wrap: wrap; 
@@ -561,13 +574,14 @@ margin-bottom: 8px;
 
 }
 
+
 @media (max-width: 768px) { 
     .portfolio-item{ 
         flex: 1 1 calc(50% - 24px); /* Для 2 блоков в ряд на планшете */ 
     } 
 } 
  
-@media (max-width: 480px) { 
+@media (max-width: 0px) { 
     .portfolio-item{ 
         flex: 1 1 100%; /* Для 1 блока в ряд на мобильных устройствах */ 
     } 
@@ -604,16 +618,20 @@ color: #434455;
 }
 
 .container-footer-media{
-    margin-right: 120px;
-    flex: 1 1 calc(25% - 24px); 
+    margin-right: 24px;
+   
 
 }
+
 
 @media (max-width: 768px) { 
     .container-footer-media { 
         flex: 1 1 calc(50% - 24px); /* Для 2 блоков в ряд на планшете */ 
         margin:auto;
     } 
+    .container-footer{
+        max-width: 584px;
+    }
 } 
  
 @media (max-width: 480px) { 
@@ -698,9 +716,7 @@ color: #f4f4fd;
 max-width: 264px 
 }
 
-.review-footer-form{
-    margin: auto;
-}
+
 
 .paragraf-footer-form{
     margin-bottom: 16px;
