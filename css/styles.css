@@ -388,66 +388,56 @@ margin-bottom: 8px;
     }
   }
 
-  .page-people-information {
-    background-color: #f6f7fb;
-    padding: 60px 0;
-    text-align: center;
-  }
-  
-  .comands-people-information {
-    font-size: 36px;
-    font-weight: 700;
-    margin-bottom: 40px;
-    color: #333;
-  }
-  
-  .list-comands {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .comands-list {
-    margin: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    width: 264px;
-  }
-  
-  .comands-list:hover {
-    transform: translateY(-10px);
-  }
-  
-  .comands-list img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-bottom: 1px solid #eee;
-  }
-  
-  .name-and-work {
-    padding: 20px;
-  }
-  
-  .names-comand {
-    font-size: 24px;
-    font-weight: 600;
-    color: #333;
-    margin-bottom: 5px;
-  }
-  
-  .information-our-team {
-    font-size: 16px;
-    color: #777;
-    margin-bottom: 20px;
-  }
-  
-  .list-pages-people{
+ .page-people-information {
+  padding: 60px 0;
+}
+
+.comands-people-information {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.list-comands {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.comands-list {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+  max-width: 264px;
+  margin-bottom: 20px;
+}
+
+.comands-list img {
+  width: 100%;
+  height: auto;
+}
+
+.name-and-work {
+  padding: 20px;
+}
+
+.names-comand {
+  font-size: 24px;
+  margin: 0 0 10px;
+}
+
+.information-our-team {
+  font-size: 16px;
+  margin: 0;
+}
+
+.list-pages-people{
     display: flex;
     justify-content: center; 
     gap: 24px;
@@ -481,30 +471,31 @@ margin-bottom: 8px;
     fill:#f4f4fd;
 
 }
-  
-  /* Tablet and above (768px and higher) */
-  @media (min-width: 768px) {
-    .list-comands {
-      justify-content: space-between;
-    }
-  
-    .comands-list {
-      width: calc(50% - 40px);
-    }
-  }
-  
-  /* Mobile devices (up to 767px) */
-  @media (max-width: 767px) {
-    .list-comands {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .comands-list {
-      width: calc(100% - 40px);
-    }
+
+
+/* Tablet devices (768px to 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .list-comands {
+    justify-content: space-between;
   }
 
+  .comands-list {
+    flex: 0 1 calc(50% - 10px);
+    max-width: 100%;
+  }
+}
+
+/* Desktop and above (1024px and higher) */
+@media (min-width: 1024px) {
+  .list-comands {
+    justify-content: space-between;
+  }
+
+  .comands-list {
+    flex: 0 1 calc(25% - 15px);
+    max-width: 100%;
+  }
+}
   /* Base styles */
 .section-portfolio {
     padding: 80px 0;
