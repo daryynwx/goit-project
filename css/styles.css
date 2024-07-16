@@ -65,7 +65,7 @@ html,body{
     .page-address {
     font-style: normal;
     margin-left: auto;
-    display: none;
+  
    
     }
     
@@ -76,7 +76,7 @@ html,body{
     }
 
     .menu {
-        display: none;
+     
     }
 
 
@@ -130,9 +130,7 @@ html,body{
 
  /* версия на планшет */
 @media screen and (min-width:768px ){
-    .open-menu-btn{
-        display: none;
-    }
+   
 
     .menu{
         display: flex;
@@ -140,7 +138,7 @@ html,body{
     }
 
     .page-address{
-        display:flex;
+        display:block;
     }
 }
 
@@ -156,6 +154,7 @@ html,body{
 
     .page-address{
         display: block;
+         max-width: 1158px;
     }
 }
 
@@ -425,13 +424,33 @@ text-align: left;
 
   /* версия на пк */
   @media screen and (min-width:1158px ){
-    .container-benefits-icons{
-        display: block;
-    }
+
     .benefits-item{
-        width: calc(25% - 15px); /* Четыре карточки в ряду на десктопе */
+        width: calc((100% - 72px) / 4);
+        padding-left: 24px;
+        padding-right: 24px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 264px;
+        height: 224px;
     }
 
+    .benefits-section{
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: #2e2f42;
+    }
+    .text-benefits-section{
+        height: 72px;
+        
+    }
+
+    .container-benefits-icons{
+        display: flex;
+    }
   }
   
  .page-people-information {
@@ -647,6 +666,8 @@ margin-bottom: 8px;
 
 
 .portfolio-list{ 
+    display: flex;
+    flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
     padding: 0;
@@ -694,6 +715,9 @@ margin-bottom: 32px;
     .portfolio-item{
         width: calc((100% - 24px) / 2);
 
+    }
+    .portfolio-list{
+        gap: 72px 24px;
     }
   }
 
