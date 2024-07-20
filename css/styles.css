@@ -65,8 +65,12 @@ html,body{
     .page-address {
     font-style: normal;
     margin-left: auto;
-  
+
    
+    }
+
+    .address-list{
+        display: none;
     }
     
     .page-navigation{
@@ -123,13 +127,12 @@ html,body{
     border: none;
 }
 
-/* версия на телефон*/
-@media screen and (max-width:768px ){
-    
-  }
 
  /* версия на планшет */
 @media screen and (min-width:768px ){
+    .open-menu-btn{
+        display: none;
+    }
    
 
     .menu{
@@ -137,8 +140,8 @@ html,body{
         gap:40px;
     }
 
-    .page-address{
-        display:block;
+    .address-list{
+        display: block;
     }
 }
 
