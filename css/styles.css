@@ -69,9 +69,9 @@ html,body{
    
     }
 
-    .address-list{
-        display: none;
-    }
+   
+  .page-address, .menu-link {
+    display: none;}
     
     .page-navigation{
         display: flex;
@@ -79,9 +79,9 @@ html,body{
         align-items: center;
     }
 
-    .menu {
-     
-    }
+   
+
+    
 
 
     
@@ -134,15 +134,58 @@ html,body{
         display: none;
     }
    
+   .menu{
+    display: flex;
+    padding-left: 120px;
+    
+   }
 
-    .menu{
-        display: flex;
-        gap:40px;
-    }
+   .menu-item{
+    padding-right: 40px;
+   }
+   .menu-link{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   }
+   .menu-link:focus,.menu-link:hover{
+    color: #404bbf;
+   }
 
-    .address-list{
-        display: block;
-    }
+   .current{
+    color: #404bbf; 
+   }
+
+  .page-address{
+    display: flex;
+  }
+
+  .address-item{
+    padding-bottom: 12px;
+  }
+  
+
+  .adress-link{
+    
+    font-family: "Roboto", sans-serif;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #434455;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .adress-link:hover,.adress-link:focus{
+    color: #404bbf;
+  }
+  
+  .menu-link {
+    display: block;}
 }
 
 @media screen and (min-width: 1158px ){
@@ -150,15 +193,14 @@ html,body{
         display: none;
     }
 
-    .menu{
+    .page-address  {
         display: flex;
-        gap:40px;
+    }
+    .menu-link{
+        display: flex;
     }
 
-    .page-address{
-        display: block;
-         max-width: 1158px;
-    }
+
 }
 
 
@@ -333,8 +375,6 @@ margin: 0;
     overflow: hidden;
   }
 
-  .page-address, .menu-link {
-    display: none;}
   
   .benefits-list {
     list-style: none;
