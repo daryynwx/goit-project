@@ -164,9 +164,7 @@ html,body{
     display: flex;
   }
 
-  .address-item{
-    padding-bottom: 12px;
-  }
+  
   
 
   .adress-link{
@@ -193,8 +191,14 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         display: none;
     }
 
-    .page-address  {
+    .address-list {
         display: flex;
+        flex-direction: row;
+        align-items: center;
+      
+    }
+    .adress-link{
+        margin-left: 40px;
     }
     .menu-link{
         display: flex;
@@ -280,7 +284,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .main-text{
-            width: 496px;
+           width: 496px;
             padding-top: 112px;
             font-family: "Roboto", sans-serif;
             font-weight: 700;
@@ -289,17 +293,14 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
             letter-spacing: 0.02em;
             text-align: center;
             color: #fff;
+           
         }
 
-        .button-service{
-            margin-top: 36px;
-            margin-bottom: 112px;
-        }
+       
         
-        .first-section{
-            width: 768px;
-            height: 436px;
-        }
+     
+         
+            
     }
 
       /* версия на пк */
@@ -311,14 +312,13 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     .hero-container{
         align-items: center;
-        margin-left: 472px;
-        margin-right: 472px;
+      
      
 
     }
     .main-text{
-        width: 496px;
-        padding-top: 188px;
+        max-width: 496px;
+        
         font-family: "Roboto", sans-serif;
         font-weight: 700;
         font-size: 56px;
@@ -331,10 +331,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         margin-top: 48px;
         margin-bottom: 188px;
     }
-    .first-section{
-        width: 1440px;
-        height: 600px;
-    }
+   
 
 
   }
@@ -521,7 +518,7 @@ text-align: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 72px;
+  gap: 24px;
 }
 
 .comands-list {
@@ -906,7 +903,7 @@ color: #fff;
 }
 
 .input-footer-form{
-    max-width: 288px;
+    
     height: 40px;
     border: 1px solid #ffffff;
     background-color: transparent;
@@ -918,7 +915,7 @@ color: #fff;
     border-radius: 4px;
     color: #ffffff;
     border: 1px solid #fff;
-    width: 288px; /* Установите нужную ширину */
+    width: 264px; /* Установите нужную ширину */
     padding: 10px;
     margin-right: 10px;
  
@@ -943,7 +940,7 @@ color: #fff;
     background-color: #4D5AE5;
     border: none;
     border-radius: 4px;
-    margin-left: 61px;
+    
 
 }
 
@@ -957,9 +954,16 @@ color: #fff;
 /* версия на планшет */
 @media screen and (min-width:768px ){
 
+    .text-social-media,.container-footer-media{
+        text-align: left;
+    }
+
     .last-section{
         height: 456px;
     }
+
+    
+    
     .footer-container {
         
         display: flex;
@@ -990,6 +994,12 @@ color: #fff;
         margin: 0 10px;
     }
 
+
+    .paragraf-footer-form{
+        text-align: left;
+    }
+    
+
     .footer-subscribe {
         display: flex;
         justify-content: center;
@@ -1012,6 +1022,12 @@ color: #fff;
         color: white;
         cursor: pointer;
     }
+
+    .form-footer-form{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
 }
 
 /* версия на пк */
@@ -1020,6 +1036,17 @@ color: #fff;
     .last-section{
         height: 312px;
     }
+
+    .form-footer-form{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .paragraf-footer-form{
+        text-align: left;
+    }
+    
 }
 
 /*========== BACKDROP STYLES ========*/
