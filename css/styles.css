@@ -378,7 +378,7 @@ margin: 0;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    
     
   }
   
@@ -456,7 +456,7 @@ text-align: left;
        
     }
     .benefits-container{
-        width: 736px;
+       
         height: 312px;
         margin-bottom: 96px;
     }
@@ -467,6 +467,8 @@ text-align: left;
 
     .benefits-item{
         width: calc((100% - 72px) / 4);
+       
+        
 
     }
 
@@ -479,12 +481,26 @@ text-align: left;
         color: #2e2f42;
     }
     .text-benefits-section{
+        padding-right: 24px;
         height: 72px;
+        width: 264px;
         
     }
 
     .container-benefits-icons{
         display: flex;
+        border: 1px solid #8e8f99;
+        border-radius: 4px;
+        width: 264px;
+        height: 112px;
+        background: #f4f4fd;
+        justify-content: center;  
+        align-items: center;
+        
+    }
+
+    .benefits-list{
+       
     }
   }
   
@@ -612,6 +628,11 @@ letter-spacing: 0.02em;
 
     /* версия на пк */
     @media screen and (min-width:1158px ){
+
+        .comands-people-information{
+            display: flex;
+            justify-content:center
+        }
 
         .comands-list{
             width: calc((100% - 72px) / 4);
@@ -1075,8 +1096,8 @@ color: #fff;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    width: 408px;
-    min-height: 584px;
+    width: 288px;
+    height: 623px;
     border-radius: 4px;
     background: #fcfcfc; 
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
