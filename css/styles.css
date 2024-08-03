@@ -41,10 +41,11 @@ html,body{
 
 .container {
     max-width: 320px;
-    margin: 0;
-    padding: 0;
-   
-}
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
 .current{
     color: #404bbf;
@@ -134,6 +135,11 @@ html,body{
 
  /* версия на планшет */
 @media screen and (min-width: 768px ){
+
+    .container {
+        max-width: 768px;
+      }
+
     .open-menu-btn{
         display: none;
     }
@@ -191,6 +197,14 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 1158px ){
+
+
+    .container {
+        max-width: 1158px;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+
     .open-menu-btn{
         display: none;
     }
@@ -275,9 +289,6 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     /* версия на планшет */
     @media screen and (min-width:768px ){
 
-        .container{
-            max-width: 768px;
-        }
 
         .hero-container{
             align-items: center;
@@ -310,9 +321,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
       /* версия на пк */
   @media screen and (min-width:1158px ){
     
-    .container{
-        max-width: 1440px;
-    }
+ 
 
     .hero-container{
         align-items: center;
@@ -469,6 +478,10 @@ text-align: left;
 
   /* версия на пк */
   @media screen and (min-width:1158px ){
+
+    .benefits-list{
+        gap: 24px;
+    }
 
     .benefits-item{
         width: calc((100% - 72px) / 4);
@@ -1102,8 +1115,12 @@ color: #fff;
 /* версия на пк */
 @media screen and (min-width:1158px ){
 
+ 
     .container-footer{
         justify-content: center;
+        display: flex;
+        flex-wrap: nowrap;
+        margin-left: auto;
     }
 
 
@@ -1490,20 +1507,21 @@ font-style: normal;
   }
 
   .soc-item-mobile{
-    width: 40px; 
+    min-width: 40px; 
     height: 40px; 
   }
 
   .soc-link-mobile{
-    width: 100%;
-    height: 100%;
-    background-color:#4d5ae5;
-    border-radius: 50%;
-    display: flex;
-    align-items: center; 
-    justify-content: center; 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);  
-  }
+        width: 100%;
+        height: 100%;
+        background-color: #4d5ae5;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  
 
   .soc-link-mobile:hover,  .soc-link-mobile:focus{
     background-color: #404bbf;
