@@ -311,7 +311,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   @media screen and (min-width:1158px ){
     
     .container{
-        max-width: 1158px;
+        max-width: 1440px;
     }
 
     .hero-container{
@@ -343,7 +343,8 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 
 .section-second{
-    padding: 120px 0;
+   padding-top: 120px;
+   padding-bottom: 120px;
     text-align: center;
 }
 
@@ -388,7 +389,7 @@ margin: 0;
   
   .benefits-item {
 
-    padding: 20px;
+    
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -462,7 +463,7 @@ text-align: left;
     .benefits-container{
        
         height: 312px;
-        margin-bottom: 96px;
+       
     }
   }
 
@@ -471,10 +472,11 @@ text-align: left;
 
     .benefits-item{
         width: calc((100% - 72px) / 4);
-       
-        
-
+      
+    
     }
+
+    
 
     .benefits-section{
         font-family: "Roboto", sans-serif;
@@ -483,11 +485,19 @@ text-align: left;
         line-height: 1.2;
         letter-spacing: 0.02em;
         color: #2e2f42;
+        
     }
     .text-benefits-section{
         padding-right: 24px;
         height: 72px;
         width: 264px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #434455;
+        
         
     }
 
@@ -501,10 +511,18 @@ text-align: left;
         justify-content: center;  
         align-items: center;
         
+        
     }
 
-    .benefits-list{
-       
+
+    .benefits-content{
+        width: 264px;
+      
+    }
+
+    .benefits-container{
+      
+        height: 224px;
     }
   }
   
@@ -786,7 +804,16 @@ margin-bottom: 32px;
 
         .portfolio-item{
             width: calc((100% - 48px) / 3);
+            max-width: 360px;
+            max-height: 420px;
+          
         }
+
+        .portfolio-list{
+            gap: 24px;
+
+        }
+        
     }
 
 
@@ -917,7 +944,8 @@ color: #fff;
     flex-direction: column; /* Располагаем элементы вертикально */
     gap: 24px;
     
-
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -966,6 +994,7 @@ color: #fff;
     border: none;
     border-radius: 4px;
     
+    
 
 }
 
@@ -987,7 +1016,20 @@ color: #fff;
         height: 456px;
     }
 
+    .container-footer{
+        display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: left;
+    gap: 72px;
+    margin-left: 108px;
+   
+    }
+
+    .footer-pages-container{
     
+    }
     
     .footer-container {
         
@@ -1046,17 +1088,24 @@ color: #fff;
         background-color: #3b82f6; /* Это должен быть ваш цвет кнопки */
         color: white;
         cursor: pointer;
+        
     }
 
     .form-footer-form{
         display: flex;
         flex-direction: row;
-        align-items: center;
+       
+        justify-content: left;
     }
 }
 
 /* версия на пк */
 @media screen and (min-width:1158px ){
+
+    .container-footer{
+        justify-content: center;
+    }
+
 
     .last-section{
         height: 312px;
@@ -1379,6 +1428,11 @@ input:focus + svg {
     line-height: 0;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
      border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-menu-close:hover,.mobile-menu-close:hover{
+    background-color: #4d5ae5;;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu-nav{
