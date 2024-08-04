@@ -64,7 +64,9 @@ html,body{
 .page-header-container {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
    
 }
     .page-address {
@@ -140,19 +142,23 @@ html,body{
         max-width: 768px;
       }
 
+      .page-header-container{
+        padding-top: 24px;
+        padding-bottom: 24px;
+      }
+
     .open-menu-btn{
         display: none;
     }
    
    .menu{
     display: flex;
-    padding-left: 120px;
+    margin-left: 120px;
+    gap: 40px;
     
    }
 
-   .menu-item{
-    padding-right: 40px;
-   }
+   
    .menu-link{
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -180,11 +186,11 @@ html,body{
   .adress-link{
     
     font-family: "Roboto", sans-serif;
-font-weight: 400;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
-color: #434455;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+    color: #434455;
 transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
@@ -205,6 +211,11 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         padding-right: 15px;
       }
 
+      .page-header-container{
+        padding-top: 24px;
+        padding-bottom: 24px;
+      }
+
     .open-menu-btn{
         display: none;
     }
@@ -217,6 +228,12 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     .adress-link{
         margin-left: 40px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #434455;
     }
     .menu-link{
         display: flex;
@@ -236,7 +253,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: #fff;
     width: 216px;
     margin: 0 auto;
-    padding-top: 72px;
+   
     margin-bottom: 72px;
 }
 
@@ -251,12 +268,12 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .first-section {
     background-color:#2e2f42;
-    max-width: 1440px;
+    max-width: 320px;
     margin-right: auto;
     margin-left: auto;
     width: 100%;
-    height: 432px;
-    
+    padding-top: 72px;
+    padding-bottom: 72px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/background/people-office.jpg) ; 
     background-repeat: no-repeat;
     background-position: center;
@@ -271,7 +288,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 16px 32px;
     display: block;
     margin: 0 auto;
-    margin-bottom: 72px;
+    
   
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -289,11 +306,16 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     /* версия на планшет */
     @media screen and (min-width:768px ){
 
+        .first-section{
+            max-width: 768px;
+            padding-top: 112px;
+            padding-bottom: 112px;
+        }
+
 
         .hero-container{
             align-items: center;
-            margin-left: 136px;
-            margin-right: 136px;
+          
          
 
         }
@@ -320,6 +342,12 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
       /* версия на пк */
   @media screen and (min-width:1158px ){
+
+    .first-section{
+        max-width: 1440px;
+        padding-top: 188px;
+        padding-bottom: 188px;
+    }
     
  
 
@@ -352,8 +380,8 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 
 .section-second{
-   padding-top: 120px;
-   padding-bottom: 120px;
+   padding-top: 96px;
+   padding-bottom: 96px;
     text-align: center;
 }
 
@@ -391,6 +419,7 @@ margin: 0;
     list-style: none;
     padding: 0;
     display: flex;
+    gap: 72px 24px;
     flex-wrap: wrap;
     
     
@@ -400,12 +429,11 @@ margin: 0;
 
     
     width: 100%;
-    display: flex;
-    flex-direction: column;
+    
     align-items: center;
     text-align: center;
     box-sizing: border-box;
-    margin-bottom: 72px; /* Отступ между элементами */
+    
   }
   
   .container-benefits-icons {
@@ -416,8 +444,7 @@ margin: 0;
   
   .benefits-content {
     text-align: center;
-    width: 288px;
-    height: 120px;
+   
     
   }
   
@@ -457,18 +484,12 @@ text-align: left;
         display: none;
     }
     .benefits-item{
-        width: calc(50% - 15px); /* Две карточки в ряду на планшете */
+        width: calc((100% - 24px) /2 ); /* Две карточки в ряду на планшете */
     }
     .benefits-section{
         text-align: left;
     }
-    .benefits-content{
-        width: 356px;
-        height: 120px;
-        padding-left: 16px;
-        padding-right: 16px;
-       
-    }
+   
     .benefits-container{
        
         height: 312px;
@@ -501,9 +522,6 @@ text-align: left;
         
     }
     .text-benefits-section{
-        padding-right: 24px;
-        height: 72px;
-        width: 264px;
         font-family: "Roboto", sans-serif;
         font-weight: 400;
         font-size: 16px;
@@ -569,7 +587,7 @@ text-align: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 24px;
+  gap: 74px 24px;
 }
 
 .comands-list {
@@ -580,7 +598,7 @@ text-align: center;
   width: 100%;
   max-width: 264px;
   height: 428px;
-  margin-bottom: 20px;
+
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 background: #fff;
 
@@ -592,8 +610,8 @@ background: #fff;
 }
 
 .name-and-work {
-  margin-top: 32px;
-  margin-bottom: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   padding-left: 16px;
   padding-right: 16px;
   
@@ -623,7 +641,7 @@ letter-spacing: 0.02em;
 }
 
 .item-pages-people{
-    width: 232px;
+    width: 40px;
     height: 40px;
     margin-bottom: 32px;
 }
@@ -656,7 +674,7 @@ letter-spacing: 0.02em;
 @media screen and (min-width:768px ){
 
     .comands-list{
-        width: calc((100% - 24px) / 2);
+        width: calc((100% - 24px) 2 2);
 
     }
   }
@@ -664,13 +682,10 @@ letter-spacing: 0.02em;
     /* версия на пк */
     @media screen and (min-width:1158px ){
 
-        .comands-people-information{
-            display: flex;
-            justify-content:center
-        }
+     
 
         .comands-list{
-            width: calc((100% - 72px) / 4);
+            width: calc((100% - 72px) 2 4);
         }
     }
 
@@ -680,11 +695,8 @@ letter-spacing: 0.02em;
 .section-portfolio{
     padding-top: 120px;
     padding-bottom: 120px;
-    padding-left: 16px;
-        padding-right: 16px;
-        display: flex;
-        flex-direction: column; /* Располагаем элементы вертикально */
-        align-items: center;
+   
+
 }
 
 
@@ -767,9 +779,8 @@ margin-bottom: 8px;
 }
 
 .portfolio-item{
-    width: 288px;
-    height: 400px;
-    margin-bottom: 48px;
+    width: 100%;
+
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     background: #fff;
@@ -797,14 +808,14 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #434455;
-margin-bottom: 32px;
+
 }
 
   /* версия на планшет */
   @media screen and (min-width:768px ){
 
     .portfolio-item{
-        width: calc((100% - 24px) / 2);
+        width: calc((100% - 24px)/2);
 
     }
     .portfolio-list{
@@ -816,14 +827,14 @@ margin-bottom: 32px;
     @media screen and (min-width:1158px ){
 
         .portfolio-item{
-            width: calc((100% - 48px) / 3);
+            width: calc((100% - 48px) 2 3);
             max-width: 360px;
             max-height: 420px;
           
         }
 
         .portfolio-list{
-            gap: 24px;
+            gap: 48px 24px;
 
         }
         
@@ -838,6 +849,7 @@ margin-bottom: 32px;
     flex-direction: row;
     justify-content: center; 
     gap: 72px;
+    padding-top: 96px;
   
 
 }
@@ -884,10 +896,9 @@ color: #fff;
 
 .last-section{
     background-color:#2e2f42;
-    padding-top: 96px;
-    padding-left: 16px;
-    padding-right: 16px;
-    height: 664px;
+    padding-top: 96px 0;
+   
+    
 }
 
 .list-footer-pages{
@@ -983,7 +994,7 @@ color: #fff;
     border: 1px solid #fff;
     width: 264px; /* Установите нужную ширину */
     padding: 10px;
-    margin-right: 10px;
+   
  
 
 }
@@ -1036,14 +1047,12 @@ color: #fff;
     flex-direction: row;
     justify-content: left;
     gap: 72px;
-    margin-left: 108px;
+    padding-left: 108px;
+    padding-top: 96px;
    
     }
 
-    .footer-pages-container{
-    
-    }
-    
+  
     .footer-container {
         
         display: flex;
@@ -1121,6 +1130,8 @@ color: #fff;
         display: flex;
         flex-wrap: nowrap;
         margin-left: auto;
+        padding-top: 100px;
+        align-items: baseline;
     }
 
 
@@ -1136,6 +1147,10 @@ color: #fff;
 
     .paragraf-footer-form{
         text-align: left;
+    }
+
+    .footer-text-information{
+        width: 264px;
     }
     
 }
@@ -1172,7 +1187,7 @@ color: #fff;
     background: #fcfcfc; 
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2); 
-    padding: 72px 24px 24px 24px; 
+    padding: 72px 24px 16px 16px; 
 
 
 
@@ -1382,7 +1397,7 @@ input:focus + svg {
     .modal{
         width: 408px;
         min-height: 584px;
-    
+        padding: 72px 24px 24px 24px; 
     }
 }
 
@@ -1393,6 +1408,7 @@ input:focus + svg {
     .modal{
         width: 408px;
         min-height: 584px;
+        padding: 72px 24px 24px 24px; 
     
     }
 }
@@ -1419,7 +1435,7 @@ input:focus + svg {
     position: relative;
     padding-top: 72px;
     padding-bottom: 40px;
-    padding-right: 156px;
+    padding-right: 16px;
     padding-left: 16px;
 
     display: flex;
@@ -1461,7 +1477,7 @@ input:focus + svg {
 }
 
 .menu-mobile-item{
-    padding-bottom: 40px;
+    margin-bottom: 40px;
 }
 
 .menu-mobile-link{
